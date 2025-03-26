@@ -5,6 +5,7 @@ import abstractFactory.factories.NHaltingFactory;
 import abstractFactory.factories.ProgramFactory;
 import abstractFactory.haltchecker.HaltChecker;
 import abstractFactory.model.Program;
+import abstractFactory.reverse.Reverse;
 
 
 public class Main {
@@ -27,5 +28,15 @@ public class Main {
         System.out.println();
 
         System.out.println("Halting p2: " + haltChecker.halt(p2));
+
+        System.out.println();
+        System.out.println("Probando Reverser con p1 (Programa que se detiene):");
+        Program reverse1 = new Reverse(p1, haltChecker);
+        reverse1.run();  //Entra en bucle infinito si se detiene
+
+        System.out.println();
+        System.out.println("Probando Reverser con p2 (Programa que no se detiene):");
+        Program reverse2 = new Reverse(p2, haltChecker);
+        reverse2.run();
     }
 }

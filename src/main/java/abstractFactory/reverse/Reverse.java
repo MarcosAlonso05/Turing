@@ -19,7 +19,10 @@ public class Reverse implements Program {
 
         if (stop) {
             System.out.println("Reverse: El programa se detendría, por lo que entro en un bucle infinito");
-            while(true){}
+            while(true){
+                System.out.println("Bucle infinito...");
+                break;
+            }
 
         }else {
             System.out.println("Reverse: El programa no se detendría, por lo que termino inmediatamente.");
