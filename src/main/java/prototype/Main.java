@@ -1,8 +1,10 @@
-package haltproblem;
+package prototype;
 
-import programs.CountDown;
-import programs.CountUp;
-import reverser.Reverser;
+import prototype.haltchecker.HaltChecker;
+import prototype.haltproblem.Program;
+import prototype.programs.CountDown;
+import prototype.programs.CountUp;
+import prototype.reverser.Reverser;
 
 public class Main {
     public static void main(String[] args) {
@@ -11,11 +13,11 @@ public class Main {
         Program reverser1 = new Reverser(countDown);
         Program reverser2 = new Reverser(countUp);
 
-        System.out.println("Executing reverser.Reverser with programs.CountDown:");
+        System.out.println("Ejecutando Reverser con CountDown:");
         // Esto debería entrar en un bucle infinito
         //reverser1.execute();
 
-        System.out.println("Executing reverser.Reverser with programs.CountUp:");
+        System.out.println("Ejecutando Reverser con CountUp:");
         // Esto debería detenerse inmediatamente
         reverser2.execute();
     }

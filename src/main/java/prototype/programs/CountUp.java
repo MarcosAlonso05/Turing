@@ -1,5 +1,5 @@
-package programs;
-import haltproblem.Program;
+package prototype.programs;
+import prototype.haltproblem.Program;
 
 public class CountUp implements Program {
     private int num;

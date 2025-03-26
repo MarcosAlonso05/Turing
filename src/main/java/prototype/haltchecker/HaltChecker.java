@@ -1,5 +1,7 @@
-package programs;
-import haltproblem.Program;
+package prototype.haltchecker;
+import prototype.haltproblem.Program;
+import prototype.programs.CountDown;
+import prototype.programs.CountUp;
 
 import java.util.HashMap;
 import java.util.Map;

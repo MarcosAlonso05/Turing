@@ -1,7 +1,7 @@
-package reverser;
+package prototype.reverser;
 
-import haltproblem.Program;
-import programs.HaltChecker;
+import prototype.haltproblem.Program;
+import prototype.haltchecker.HaltChecker;
 
 public class Reverser implements Program {
     private Program program;
@@ -14,10 +14,10 @@ public class Reverser implements Program {
     public void execute() {
         if (HaltChecker.doesHalt(program.clone())) {
             while (true) {
-                System.out.println("Looping indefinitely...");
+                System.out.println("Loop infinito.");
             }
         } else {
-            System.out.println("Halting immediately.");
+            System.out.println("Parada inmediata.");
         }
     }
 
