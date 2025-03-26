@@ -23,7 +23,7 @@ Se define una interfaz Program con el método clone(), que las clases CountDown,
 5. Reverser
 - Este programa invierte el comportamiento de otro programa utilizando el HaltChecker. Si el programa original se detiene, Reverser entra en un bucle infinito; si el programa original es infinito, Reverser s
 
-##Funcionamiento del main
+## Funcionamiento del main
 
 La clase Main instancia varios programas y los ejecuta para demostrar el patrón Prototype.
 
