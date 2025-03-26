@@ -1,7 +1,7 @@
-package factories;
+package abstractFactory.factories;
 
-import model.NoHaltingP;
-import model.Program;
+import abstractFactory.model.NoHaltingP;
+import abstractFactory.model.Program;
 
 public class NHaltingFactory implements ProgramFactory {
     @Override

@@ -1,4 +1,4 @@
-package model;
+package abstractFactory.model;
 
 public class HaltingP implements Program {
     @Override

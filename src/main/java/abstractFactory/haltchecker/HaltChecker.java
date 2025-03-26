@@ -1,8 +1,8 @@
-package haltchecker;
+package abstractFactory.haltchecker;
 
 //El Haltchecker comprobara si El programa se detiene en un tiempo limitado
 
-import model.Program;
+import abstractFactory.model.Program;
 
 import java.util.concurrent.*;
 
@@ -12,7 +12,7 @@ public class HaltChecker {
         Future<?> future = executor.submit(program::run);
 
         try {
-            future.get(5, TimeUnit.SECONDS);
+            future.get(6, TimeUnit.SECONDS);
             System.out.println("HaltChecker: Programa se ha detenido");
             return true;
         } catch (TimeoutException e) {

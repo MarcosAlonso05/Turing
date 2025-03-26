@@ -1,7 +1,7 @@
-package factories;
+package abstractFactory.factories;
 
-import model.HaltingP;
-import model.Program;
+import abstractFactory.model.HaltingP;
+import abstractFactory.model.Program;
 
 public class HaltingFactory implements ProgramFactory {
 
