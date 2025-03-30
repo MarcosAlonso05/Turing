@@ -10,7 +10,7 @@ public class HaltChecker {
         Future<?> future = executor.submit(program::run);
 
         try {
-            future.get(10, TimeUnit.SECONDS);
+            future.get(6, TimeUnit.SECONDS);
             System.out.println("HaltChecker: Programa se ha detenido");
             return true;
         } catch (TimeoutException e) {
