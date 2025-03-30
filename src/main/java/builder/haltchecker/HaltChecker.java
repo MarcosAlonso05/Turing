@@ -1,6 +1,6 @@
-package main.builder.haltchecker;
+package builder.haltchecker;
 
-import main.builder.model.Program;
+import builder.model.Program;
 
 import java.util.concurrent.*;
 

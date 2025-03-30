@@ -1,7 +1,7 @@
-package main.builder.reverse;
+package builder.reverse;
 
-import main.builder.haltchecker.HaltChecker;
-import main.builder.model.Program;
+import builder.haltchecker.HaltChecker;
+import builder.model.Program;
 
 public class Reverse implements Program {
     private final Program program;

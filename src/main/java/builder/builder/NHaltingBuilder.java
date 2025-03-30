@@ -1,7 +1,7 @@
-package main.builder.builder;
+package builder.builder;
 
-import main.builder.model.Program;
-import main.builder.model.NHaltingP;
+import builder.model.Program;
+import builder.model.NHaltingP;
 
 public class NHaltingBuilder implements PBuilder {
 

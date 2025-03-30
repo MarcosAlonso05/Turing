@@ -1,7 +1,7 @@
-package main.builder.builder;
+package builder.builder;
 
-import main.builder.model.HaltingP;
-import main.builder.model.Program;
+import builder.model.HaltingP;
+import builder.model.Program;
 
 public class HaltingBuilder implements PBuilder {
 

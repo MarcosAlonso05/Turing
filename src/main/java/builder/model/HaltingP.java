@@ -1,20 +1,17 @@
-package main.builder.model;
+package builder.model;
 
-public class NHaltingP implements Program {
+public class HaltingP implements Program {
 
     @Override
     public void run() {
-        int i = 0;
-        while (true) {
-            i++;
+        for (int i = 10; i >= 0; i--) {
             System.out.println(i);
             try {
                 Thread.sleep(500);
             } catch (InterruptedException e) {
                 Thread.currentThread().interrupt();
-                break;
             }
         }
+        System.out.println("Programa detenido.");
     }
-
 }

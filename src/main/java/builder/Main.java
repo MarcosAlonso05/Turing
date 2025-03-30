@@ -1,10 +1,10 @@
-package main.builder;
+package builder;
 
-import main.builder.builder.HaltingBuilder;
-import main.builder.builder.NHaltingBuilder;
-import main.builder.haltchecker.HaltChecker;
-import main.builder.model.Program;
-import main.builder.reverse.Reverse;
+import builder.builder.HaltingBuilder;
+import builder.builder.NHaltingBuilder;
+import builder.haltchecker.HaltChecker;
+import builder.model.Program;
+import builder.reverse.Reverse;
 
 public class Main {
     public static void main(String[] args) {

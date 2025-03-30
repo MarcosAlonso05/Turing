@@ -1,4 +1,4 @@
-package main.builder.model;
+package builder.model;
 
 public interface Program {
     void run();
