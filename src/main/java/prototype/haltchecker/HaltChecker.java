@@ -1,20 +1,24 @@
 package prototype.haltchecker;
-import prototype.haltproblem.Program;
-import prototype.programs.CountDown;
-import prototype.programs.CountUp;
 
-import java.util.HashMap;
-import java.util.Map;
+import prototype.haltproblem.Program;
+import prototype.reverser.Reverser;
 
 public class HaltChecker {
-    private static final Map<Class<? extends Program>, Boolean> knownPrograms = new HashMap<>();
+    public boolean checkHalt(Program program) {
+        // Simulación simplificada del halt checker
+        // En la realidad, esto no puede existir para todos los casos
 
-    static {
-        knownPrograms.put(CountDown.class, true);
-        knownPrograms.put(CountUp.class, false);
-    }
+        if (program.getName().equals("CountDown")) {
+            return true;
+        } else if (program.getName().equals("CountUp")) {
+            return false;
+        } else if (program.getName().equals("Reverser")) {
+            // Esto demuestra la paradoja
+            Reverser reverser = (Reverser) program;
+            return !checkHalt(reverser.getInput());
+        }
 
-    public static boolean doesHalt(Program program) {
-        return knownPrograms.getOrDefault(program.getClass(), false);
+        // Para otros programas, asumimos que paran (simplificación)
+        return true;
     }
 }
