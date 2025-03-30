@@ -50,7 +50,7 @@ Programa 2 (No se detiene):
 Halting p2: false
 
 Probando Reverser con p1 (Programa que se detiene):
-(Reverser entra en un bucle infinito... detener manualmente)
+(Reverser entra en un bucle infinito...)
 
 Probando Reverser con p2 (Programa que no se detiene):
 Reverser: El programa no se detendría, por lo que termino inmediatamente.
